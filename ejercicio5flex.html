@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de Flexbox 5</title>
+
+     <style>
+          .main{
+            display: flex;
+            gap: 2px;
+            min-height: 100vh;
+            font-family: sans-serif;
+            
+        }
+        div{
+            display:block
+            unicode-bidi isolate;
+        
+        }
+
+        .main .side1{
+            background-color:  rgb(133, 215, 239) ;
+            flex: 1;
+        }
+        .main .side2{
+            background-color: rgb(193, 219, 210);
+            flex: 4;
+        }
+        .main .side1, .main .side2{
+            height: 100vh;
+            padding: 12px 24px;
+        }
+    </style>
+
+
+    <main>
+        <div class="main">
+        <div class="side1">contenido lateral</div>
+        <div class="side2">Esto sería el contenido principal</div>
+        </div>
+    </main>
+</body>
+</html>
+
