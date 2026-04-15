@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website en HMTL</title>
+    <style>
+        body{
+            font-family:Arial;
+        }
+        .header{
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .hero{
+            text-align: center;
+            border: 1px solid black;
+            padding: 30px;
+        }
+        .main{
+            display: flex;
+            border: 1px solid black;
+        }
+        .column{
+            flex: 1;
+            border-right: 1px solid black;
+            padding: 10px;
+        }
+        .column:last-child{
+            border-right: none;
+        }
+        .box{
+            border: 1px solid black;
+            padding: 8px;
+            margin: 5px 0;
+        }
+        .reviews{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .review-container{
+            display: flex;
+            gap: 10px;
+        }
+        .review{
+            flex: 1;
+            border: 1px solid black;
+            padding: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div>your name</div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Projects</a>
+            <a href="#">Articles</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Frontend Developer</h1>
+        <p>hmtl only with proper layout, no styling</p>
+    </section>
+
+    <section class="main">
+        <div class="column projects">
+            <h2>Projects</h2>
+            <div class="box">HTML Only Portfolio</div>
+            <div class="box">Calculator</div>
+            <div class="box">Quiz App</div>
+            <div class="box">Countdown Timer</div>
+            <div class="box">Product Upcoming Page</div>
+            </div>
+
+            <div class="column work">
+                <h2>Work Experience</h2>
+
+                <div class="box">
+                <b>roadmap.sh</b>
+                <p>Solved all the frontend projects</p>
+                <a href="#">Visit my Profile</a>
+            </div>
+
+            <div class="box">
+                <b>OpenSource Work</b>
+                <p>Contributed to 50 opensource projects. Made my own projects with 200 GitHub Stars</p>
+                <a href="#">Visit my GitHub Profile</a>
+            </div>
+            </div>
+
+            <div class="column education">
+                <h2>Education</h2>
+                <p>Graduated with 3.76 out of 4 CGPA Won Acme Hackathon. Organized 30 sessions.</p>
+
+                <h3>Courses I took.</h3>
+                <ul>
+                    <li>Object Oriented Programming</li>
+                    <li>Data Structures</li>
+                    <li>Web Engineering</li>
+                    <li>Artificial Intelligence</li>
+                    <li>Human Computer Interaction</li>
+                    <li>Computer Graphics</li>
+                    <li>Database Management Systems</li>
+                    <li>Distributed Database Systems</li>
+                    <li>Discreet Mathematics</li>
+                </ul>
+            </div>
+
+            </section>
+
+            <section class="reviews">
+                <h2>Reviews from my Teachers</h2>
+
+                <div class="review-container">
+                    <div class="review">John Doe was a brilliant student; always stood out with his assignments.</div>
+                    <div class="review">John Doe was a brilliant student; always stood out with his assignments.</div>
+                    <div class="review">John Doe was a brilliant student; always stood out with his assignments.</div>
+                </div>
+            </section>
+
+</body>
+</html>
